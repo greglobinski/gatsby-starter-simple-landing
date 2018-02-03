@@ -290,7 +290,7 @@ class Billboard extends React.Component {
           <header className={classes.header}>
             <h1>
               A vocabulary training web app for language learners like you,{" "}
-              <em>declared visual learners</em>.
+              <em>declared visual learners</em>!
             </h1>
             <h2>If you are a visual learner type the app is definitely for you</h2>
           </header>
