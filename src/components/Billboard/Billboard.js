@@ -289,10 +289,11 @@ class Billboard extends React.Component {
           </span>
           <header className={classes.header}>
             <h1>
-              A vocabulary training web app for language learners like you,{" "}
-              <em>declared visual learners</em>
+              This is a demo page of the <em>Simple-Landing</em> Gatsby starter.
             </h1>
-            <h2>If you are a visual learner type the app is definitely for you</h2>
+            <h2>
+              It{`'`}s an Open Source, optimized, ready to use theme-starter. Just add your content.
+            </h2>
           </header>
           <div className={classes.actionForDesktop}>
             <DemoLink onClick={handleMouseClick} />

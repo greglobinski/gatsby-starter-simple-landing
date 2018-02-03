@@ -12,7 +12,7 @@ module.exports = {
   ctaLinkTarget: "/",
   // manifest.json
   manifestName: "SimpleLanding - Gatsby starter",
-  manifestShortName: "SimpleLanding",
+  manifestShortName: "SimplLanding",
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.bg,
   manifestThemeColor: colors.bg,

@@ -40,7 +40,7 @@ const DemoLink = props => {
   const { classes, onClick } = props;
   return (
     <Button onClick={onClick} classes={{ root: classes.root, label: classes.label }}>
-      Try demo&nbsp; <Phonelink />
+      Go to GitHub
     </Button>
   );
 };
