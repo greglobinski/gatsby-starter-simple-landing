@@ -14,7 +14,6 @@ class Template extends React.Component {
     return (
       <MuiThemeProvider theme={theme}>
         <div>
-          <Reboot />
           <SEO />
           {children()}
         </div>
