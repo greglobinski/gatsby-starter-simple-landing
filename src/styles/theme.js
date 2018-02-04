@@ -29,7 +29,7 @@ const theme = createMuiTheme({
       logoWidth: "200px",
       logoWidthForM: "300px",
       logoWidthForL: "50%",
-      h1Font: 1.9,
+      h1Font: 1.8,
       h2Font: 1.2,
       fontIncraseForM: 1.2,
       fontIncraseForL: 1.4

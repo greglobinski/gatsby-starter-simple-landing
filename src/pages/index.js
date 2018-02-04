@@ -52,7 +52,7 @@ class Index extends React.Component {
           </picture>
         </div>
         <Billboard data={this.props.data} />
-        <Footer />
+        <Footer data={this.props.data} />
       </main>
     );
   }
@@ -68,6 +68,16 @@ export default injectSheet(styles)(Index);
 // eslint-disable-next-line no-undef
 export const pageQuery = graphql`
   query IndexQuery {
+    content: allMarkdownRemark {
+      edges {
+        node {
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
     phone300: allImageSharp(filter: { id: { regex: "/phone(-perspective)*.png/" } }) {
       edges {
         node {

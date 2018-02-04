@@ -325,7 +325,7 @@ export default {
       textSizeAdjust: "100%"
     },
     "html.wf-active": {
-      fontFamily: theme.main.fonts.unstyled
+      fontFamily: theme.main.fonts.styled
     },
     "*, *:before, *:after": {
       boxSizing: "inherit"

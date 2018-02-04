@@ -75,9 +75,6 @@ const styles = theme => ({
     "& h1": {
       color: theme.billboard.colors.text,
       fontSize: `${theme.billboard.sizes.h1Font}em`,
-      "html.wf-active &": {
-        // add style here if you want to minimalize differences beetween unstyled and styled text
-      },
       [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
         fontSize: `${theme.billboard.sizes.h1Font * theme.billboard.sizes.fontIncraseForM}em`,
         "html.wf-active &": {
@@ -273,6 +270,8 @@ class Billboard extends React.Component {
     const { width, type, version, srcSet } = params;
     const data = this.props.data;
 
+    console.log(data.content);
+
     const srcType = srcSet ? "srcSet" : "src";
     const fileType = type === "webp" ? "Webp" : "";
     const imgWidth = width ? width.toString() : "300";
@@ -286,11 +285,6 @@ class Billboard extends React.Component {
 
   render() {
     const { classes } = this.props;
-
-    const headings = this.props.data.content.edges.find(
-      el => el.node.frontmatter.title === "billboard"
-    ).node.html;
-
     const { phoneInPerspectiveVisible, initialView } = this.state;
 
     return (
@@ -299,7 +293,14 @@ class Billboard extends React.Component {
           <span className={classes.logo}>
             <SvgEl svg={LOGOS.MAIN} />
           </span>
-          <header className={classes.header} dangerouslySetInnerHTML={{ __html: headings }} />
+          <header className={classes.header}>
+            <h1>
+              This is a demo page of the <em>SimpleLanding</em> Gatsby starter.
+            </h1>
+            <h2>
+              It{`'`}s an Open Source, optimized, ready to use theme-starter. Just add your content.
+            </h2>
+          </header>
           <div className={classes.actionForDesktop}>
             <DemoLink onClick={handleMouseClick} />
           </div>

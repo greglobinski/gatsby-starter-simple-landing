@@ -52,65 +52,55 @@ const styles = theme => ({
         display: "none"
       }
     }
+  },
+  links: {
+    "& ul": {
+      listStyle: "none",
+      margin: 0,
+      padding: 0
+    },
+    "& li": {
+      display: "block",
+      margin: ".3em 0",
+      [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
+        display: "inline-block",
+        margin: "0 .7em 0 0",
+        "&:after": {
+          content: "'|'",
+          margin: "0 0 0 1em",
+          color: Color(theme.footer.colors.text)
+            .lighten(0.5)
+            .string()
+        },
+        "&:last-child": {
+          "&:after": {
+            content: "''"
+          }
+        }
+      }
+    }
   }
 });
 
-const Footer = ({ classes }) => {
+const Footer = ({ classes, data }) => {
+  const links = data.content.edges.find(el => el.node.frontmatter.title === "footer").node.html;
+
   return (
     <footer className={classes.footer}>
       <div className={classes.column}>
         Contact: <Obfuscate email={config.contactEmail} />
       </div>
-      <div className={classes.column}>
-        <span>
-          Built with{" "}
-          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
-            React
-          </a>{" "}
-          &{" "}
-          <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
-            Gatsby
-          </a>
-        </span>{" "}
-        <b>|</b>{" "}
-        <span>
-          Hosted on{" "}
-          <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">
-            Netlify
-          </a>
-        </span>{" "}
-        <b>|</b>{" "}
-        <span>
-          Credits:{" "}
-          <a
-            href="https://unsplash.com/photos/22mlwLRBlj0"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Photo
-          </a>,{" "}
-          <a
-            href="http://creativecrunk.com/google-pixel-psd-mockup/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Phone
-          </a>{" "}
-          <a
-            href="http://creativecrunk.com/google-pixel-psd-mockup-2/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Mockups
-          </a>
-        </span>
-      </div>
+      <div
+        className={`${classes.column} ${classes.links}`}
+        dangerouslySetInnerHTML={{ __html: links }}
+      />
     </footer>
   );
 };
 
 Footer.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 };
 
 export default injectSheet(styles)(Footer);
