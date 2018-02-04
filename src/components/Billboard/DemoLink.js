@@ -3,7 +3,7 @@ import { withStyles } from "material-ui/styles";
 import PropTypes from "prop-types";
 import Color from "color";
 
-import Phonelink from "material-ui-icons/Phonelink";
+import ArrowForward from "material-ui-icons/ArrowForward";
 import Button from "material-ui/Button";
 
 const styles = theme => ({
@@ -40,7 +40,7 @@ const DemoLink = props => {
   const { classes, onClick } = props;
   return (
     <Button onClick={onClick} classes={{ root: classes.root, label: classes.label }}>
-      Go to GitHub
+      Go to GitHub <ArrowForward />
     </Button>
   );
 };

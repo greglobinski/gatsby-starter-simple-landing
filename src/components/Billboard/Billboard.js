@@ -13,14 +13,14 @@ function handleMouseClick() {
   if (typeof ga === `function`) {
     window.ga("send", {
       hitType: "event",
-      eventCategory: "cta",
+      eventCategory: "engagement",
       eventAction: "click",
-      eventLabel: "Try Demo"
+      eventLabel: "cta click"
     });
   }
 
   setTimeout(() => {
-    document.location.href = config.ctaLinkTarget;
+    document.location.href = config.ctaLinkUrl;
   }, 200);
 }
 
@@ -54,10 +54,13 @@ const styles = theme => ({
   },
   logo: {
     display: "inline-block",
-    width: theme.billboard.sizes.logoWidthMobile,
+    width: theme.billboard.sizes.logoWidth,
     margin: "0 0 1em 0",
+    [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
+      width: theme.billboard.sizes.logoWidthForM
+    },
     [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
-      width: theme.billboard.sizes.logoWidthDesktop
+      width: theme.billboard.sizes.logoWidthForL
     },
     "& path": {
       fill: theme.billboard.colors.logo
@@ -67,24 +70,21 @@ const styles = theme => ({
     "& h1, & h2": {
       margin: 0,
       fontWeight: 300,
-      lineHeight: 1.15
+      lineHeight: 1.2
     },
     "& h1": {
       color: theme.billboard.colors.text,
-      fontSize: "1.9em",
-      "html.wf-active &": {
-        fontSize: "1.8em"
-      },
+      fontSize: `${theme.billboard.sizes.h1Font}em`,
       [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
-        fontSize: "2.2em",
+        fontSize: `${theme.billboard.sizes.h1Font * theme.billboard.sizes.fontIncraseForM}em`,
         "html.wf-active &": {
-          fontSize: "2.1em"
+          // add style here if you want to minimalize differences beetween unstyled and styled text
         }
       },
       [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
-        fontSize: "2.5em",
+        fontSize: `${theme.billboard.sizes.h1Font * theme.billboard.sizes.fontIncraseForL}em`,
         "html.wf-active &": {
-          fontSize: "2.4em"
+          // add style here if you want to minimalize differences beetween unstyled and styled text
         }
       }
     },
@@ -92,11 +92,15 @@ const styles = theme => ({
       color: Color(theme.billboard.colors.text)
         .darken(0.2)
         .string(),
-      fontSize: "1.2em",
+      fontSize: `${theme.billboard.sizes.h2Font}em`,
       margin: "1em 0 0 0",
-      lneHeight: 1.2,
+      lineHeight: 1.4,
+      [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
+        fontSize: `${theme.billboard.sizes.h2Font * theme.billboard.sizes.fontIncraseForM}em`
+      },
       [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
-        fontSize: "1.6em"
+        fontSize: `${theme.billboard.sizes.h2Font * theme.billboard.sizes.fontIncraseForL}em`,
+        lineHeight: 1.3
       }
     },
     "& em": {
@@ -289,7 +293,7 @@ class Billboard extends React.Component {
           </span>
           <header className={classes.header}>
             <h1>
-              This is a demo page of the <em>Simple-Landing</em> Gatsby starter.
+              This is a demo page of the <em>SimpleLanding</em> Gatsby starter.
             </h1>
             <h2>
               It{`'`}s an Open Source, optimized, ready to use theme-starter. Just add your content.

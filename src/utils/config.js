@@ -5,11 +5,11 @@ module.exports = {
   appName: "SimpleLanding",
   siteTitle: "SimpleLanding - a landing page GatsbyJs starter",
   siteUrl: "https://gssl.greglobinski.com",
-  siteImage: "preview.png",
+  siteImage: "preview.jpg",
   siteLanguage: "en",
   siteDescription: "SimpleLanding is a dead simple landing page GatsbyJs starter.",
   contactEmail: "hello@example.com",
-  ctaLinkTarget: "/",
+  ctaLinkUrl: "https://github.com/greglobinski/gatsby-starter-simple-landing",
   // manifest.json
   manifestName: "SimpleLanding - Gatsby starter",
   manifestShortName: "SimplLanding",

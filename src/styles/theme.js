@@ -26,8 +26,13 @@ const theme = createMuiTheme({
       logo: colors.bright
     },
     sizes: {
-      logoWidthMobile: "200px",
-      logoWidthDesktop: "50%"
+      logoWidth: "200px",
+      logoWidthForM: "300px",
+      logoWidthForL: "50%",
+      h1Font: 1.9,
+      h2Font: 1.2,
+      fontIncraseForM: 1.2,
+      fontIncraseForL: 1.4
     }
   },
   footer: {
