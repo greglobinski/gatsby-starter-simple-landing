@@ -8,14 +8,10 @@ This is a starter/theme for [Gatsby](https://github.com/gatsbyjs/gatsby).
 
 ## Description
 
-### Styles
+#### Styles
 
 SimpleLanding uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
 for React [React-JSS](https://github.com/cssinjs/react-jss) to declare and mantain CSS styles.
-[gatsby-plugin-jss](https://www.gatsbyjs.org/packages/gatsby-plugin-jss/).
-Three important files to notice: `/src/styles/global.js` with global styles,
-`/src/styles/colors.js` with color palette variables and `/src/styles/theme.js`
-with a styled-component theme.
 
 ## Setup
 
@@ -38,25 +34,23 @@ Edit `\src\utils\siteConfig.js`
 ```
 module.exports = {
   pathPrefix: "/",
-  siteTitle: "Gatsby StyledBlog starter",
-  siteLongTitle: "Gatsby StyledBlog Theme/Starter",
-  siteUrl: "https://gsbs.greglobinski.com",
+  appName: "SimpleLanding",
+  siteTitle: "SimpleLanding - a landing page GatsbyJs starter",
+  siteUrl: "https://gssl.greglobinski.com",
+  siteImage: "preview.jpg",
   siteLanguage: "en",
-  siteLogo: "/logos/logo-1024.png",
-  siteDescription: "This is a starter/theme for GatsbyJS",
+  siteDescription: "SimpleLanding is a dead simple landing page GatsbyJs starter.",
+  contactEmail: "hello@example.com",
+  ctaLinkUrl: "https://github.com/greglobinski/gatsby-starter-simple-landing",
   // manifest.json
-  manifestName: "StyledBlog Gatsby starter",
-  manifestShortName: "StyledBlog",
+  manifestName: "SimpleLanding - Gatsby starter",
+  manifestShortName: "SimplLanding",
   manifestStartUrl: "/",
-  manifestBackgroundColor: colors.first,
-  manifestThemeColor: colors.firstLight,
+  manifestBackgroundColor: colors.bg,
+  manifestThemeColor: colors.bg,
   manifestDisplay: "standalone",
-  // Author note
-  authorName: "Mr. Gatsby",
-  authorDescription: `Proin ornare ligula eu tellus tempus elementum. Aenean bibendum iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. `,
-  // texts
-  copyright:
-    "This is the place for a copyrigh note - editable through config object"
+  // analytics
+  analyticsTrackingId: "UA-110088221-3"
 };
 ```
 
@@ -66,185 +60,77 @@ Edit the `\src\styles\colors.js` file to customize the color palette.
 
 ```
 module.exports = {
-  first: "#7F5D80",
-  firstLight: "#CFC0CF",
-  firstSuperLight: "#F4F0F4",
-  firstDark: "#563E57",
-  accent: "#FF6633",
+  bg: "#D9D9D9",
+  accent: "#709425",
   bright: "#ffffff",
-  light: "#f3f3f3",
-  middle: "#666666",
   dark: "#333333",
-  superDark: "#111111"
+  gray: "#777777"
 };
 ```
 
 ### Theme
 
-Edit the `\src\styles\theme.js` file to customize colors of element.
+Edit the `\src\styles\theme.js` file to customize style of elements
 
 ```
-const colors = require("./colors");
-
-const theme = {
-  navigator: {
+const theme = createMuiTheme({
+  main: {
     colors: {
-      title: colors.firstSuperLight,
-      subTitle: colors.bright,
-      scrollTrack: colors.first,
-      scrollThumb: colors.firstDark,
-      linkHover: colors.bright,
-      header: colors.firstSuperLight,
-      asideItemActiveBorder: colors.accent
-    },
-    sizes: {
-      asideWidth: "19em",
-      maxWidth: "56em"
-    },
-    backgrounds: {
-      wrapper: colors.first,
-      asideItemActive: colors.firstDark
-    }
-  },
-  post: {
-    colors: {
-      author: colors.middle,
-      authorBorder: colors.firstLight,
-      bold: colors.middle,
-      blockquoteFrame: colors.light,
-      copyright: colors.middle,
-      link: colors.first,
-      linkHover: colors.firstLight,
-      meta: colors.middle,
-      metaBorder: colors.first,
+      background: colors.bg,
       text: colors.dark,
-      title: colors.middle,
-      subTitle: colors.superDark
+      link: colors.accent,
+      linkHover: Color(colors.accent)
+        .lighten(0.1)
+        .string()
     },
-    backgrounds: {
-      wrapper: colors.bright,
-      meta: colors.light
-    },
-    sizes: {
-      maxWidth: "50em"
+    fonts: {
+      unstyled: `"-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "sans-serif"`,
+      styled: "Open Sans"
     }
   },
-  bottomBar: {
+  billboard: {
     colors: {
-      link: colors.bright,
-      icon: colors.firstSuperLight
-    },
-    backgrounds: {
-      wrapper: colors.first,
-      icon: colors.firstDark
+      text: colors.dark,
+      textAccent: colors.accent,
+      ctaLinkBackground: colors.accent,
+      logo: colors.bright
     },
     sizes: {
-      height: 44 //pixels
+      logoWidth: "200px",
+      logoWidthForM: "300px",
+      logoWidthForL: "50%",
+      h1Font: 1.8,
+      h2Font: 1.2,
+      fontIncraseForM: 1.2,
+      fontIncraseForL: 1.4
     }
   },
-  topBar: {
+  footer: {
     colors: {
-      link: colors.bright,
-      linkPost: colors.first
-    },
-    backgrounds: {
-      wrapper: colors.firstLight,
-      wrapperPost: colors.bright,
-      icon: colors.accent
+      text: colors.gray,
+      link: Color(colors.gray)
+        .lighten(0.2)
+        .string(),
+      linkHover: colors.gray
     },
     sizes: {
-      height: 44 //pixels
-    }
-  },
-  info: {
-    colors: {
-      text: colors.firstDark,
-      link: colors.firstDark,
-      linkHover: colors.first,
-      btn: colors.bright
-    },
-    backgrounds: {
-      wrapper: colors.firstLight,
-      btn: colors.accent
-    },
-    sizes: {
-      maxWidth: "40em"
+      height: "50px"
     }
   },
   mediaQueryTresholds: {
-    XL: "65em",
-    L: "49em",
-    M: "37em",
-    S: "28em",
-    XS: "21em"
+    M: 600,
+    L: 1024
   }
-};
+});
 ```
 
-### Webfonts
+### Content
 
-As mentioned StyledBlog does not use webfonts. If you need them, the simplest
-way is to use Google Fonts is through
-[Typography.js](https://kyleamathews.github.io/typography.js/). But instead
-installing Typography.js directly use
-[gatsby-plugin-typography](https://www.gatsbyjs.org/tutorial/part-two/#typographyjs).
+Page content is located in `/content/` directory, in markdown files.
 
-Remember to update `body { font-family: ....}` in the `/src/styles/global.js`
-file. Also remove `import "normalize.css";` from `/src/layouts/index.js`, since
-Typography comes with its own normalize styles.
+# Sites built with the starter
 
-### Posts
-
-Blog content is located in `/content/posts/` directory, in markdown files.
-
-# Status
-
-I like the approach described in the saying "Do it, then do it right and then do
-it even better." So...
-
-### What was done
-
-* I started with
-  [gatsby-starter-hello-world](https://github.com/gatsbyjs/gatsby-starter-hello-world).
-
-* Installed plugins:
-
-```
-gatsby-image, gatsby-plugin-catch-links,
-gatsby-plugin-manifest, gatsby-plugin-netlify, gatsby-plugin-offline,
-gatsby-plugin-react-helmet, gatsby-plugin-sharp,
-gatsby-plugin-styled-components, gatsby-plugin-typography,
-gatsby-remark-copy-linked-files, gatsby-remark-images, gatsby-remark-prismjs,
-gatsby-remark-responsive-ifram, gatsby-remark-smartypants,
-gatsby-source-filesystem, gatsby-transformer-remark, gatsby-transformer-sharp
-normalize.css, styled-components
-```
-
-* Created four React components: Navigator, TopBar, BottomBar and Info. There
-  are also other components, but they are only for code organizing.
-
-### What need to be done to 'Do it right'
-
-* ~~Add redux (react-redux) to manage state of interface~~ (done)
-* Types (prop-types/?/flow)
-* Navigator virtualization
-* Refactor animations for mobile
-* Fix and install [what-input](https://github.com/ten1seven/what-input)
-* Categories
-* SEO component
-* Disqus Comments
-* ...
-
-### What can be done to "make it even better"
-
-* Searching
-* PWA push notifications (?)
-* Localstorage for user history
-* ...
-
-# Blogs built with the starter
-
-* [www.userexperiencenotes.com](https://www.userexperiencenotes.com/)
+* [www.lazywill.com](https://www.lazywill.com/)
 
 pr to add your blog
 

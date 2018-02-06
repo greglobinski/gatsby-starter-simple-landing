@@ -2,6 +2,10 @@ import Color from "color";
 import theme from "./theme";
 
 export default {
+  /*
+      BEGINNING OF NORMALIZE STYLE
+    */
+
   "@global": {
     /**
      * Add the correct display in IE9
@@ -311,8 +315,12 @@ export default {
     },
 
     /*
-      END OF NORMALIZE-JSS
+      END OF NORMALIZE STYLE
     */
+
+    /*
+      BEGiNNIG OF CUTSOM GLOBAL STYLE
+     */
 
     html: {
       boxSizing: "border-box",
