@@ -1,7 +1,6 @@
 import React from "react";
 import injectSheet from "react-jss";
 import { MuiThemeProvider } from "material-ui/styles";
-import Reboot from "material-ui/Reboot";
 import PropTypes from "prop-types";
 import theme from "../styles/theme";
 import globals from "../styles/globals";

@@ -1,13 +1,12 @@
 import React from "react";
 import { JssProvider, SheetsRegistry } from "react-jss";
 import { renderToString } from "react-dom/server";
-import { default as minifyCssString } from "minify-css-string";
 
-exports.replaceRenderer = ({
-  bodyComponent,
-  replaceBodyHTMLString,
-  setHeadComponents
-}) => {
+function minifyCssString(css) {
+  return css.replace(/\n/g, "").replace(/\s\s+/g, " ");
+}
+
+exports.replaceRenderer = ({ bodyComponent, replaceBodyHTMLString, setHeadComponents }) => {
   const sheets = new SheetsRegistry();
 
   replaceBodyHTMLString(
@@ -24,7 +23,7 @@ exports.replaceRenderer = ({
   ]);
 };
 
-exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
+exports.onRenderBody = ({ setHeadComponents }) => {
   return setHeadComponents([
     <link
       key={`webfontsloader-preload`}
@@ -35,21 +34,12 @@ exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
   ]);
 };
 
-exports.onRenderBody = ({ setPostBodyComponents }, pluginOptions) => {
+exports.onRenderBody = ({ setPostBodyComponents }) => {
   return setPostBodyComponents([
-    // <link
-    //   key={`webfontsloader-dnsprefetch`}
-    //   rel="dns-prefetch"
-    //   href="//ajax.googleapis.com/"
-    // />,
-    // <script
-    //   key={`webfontsloader`}
-    //   src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-    // />,
     <script
       key={`webfontsloader-setup`}
       dangerouslySetInnerHTML={{
-        __html: ` 
+        __html: `
         WebFontConfig = {
           google: {
       families: ["Open Sans:300,400"]

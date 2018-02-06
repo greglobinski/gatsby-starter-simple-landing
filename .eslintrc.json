@@ -1,18 +1,25 @@
 {
+  "parser": "babel-eslint",
+  "extends": [
+    "google",
+    "prettier",
+    "prettier/react",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["prettier", "react", "jsx-a11y", "import", "graphql"],
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
-  "extends": ["airbnb-base", "prettier", "eslint:recommended", "plugin:react/recommended"],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "plugins": ["prettier", "react", "jsx-a11y", "import", "graphql"],
   "rules": {
     "arrow-body-style": "off",
     "camelcase": "warn",
@@ -20,6 +27,7 @@
     "global-require": "warn",
     "import/no-dynamic-require": "warn",
     "import/no-extraneous-dependencies": "warn",
+    "no-console": "off",
     "no-multi-assign": "off",
     "no-param-reassign": "warn",
     "no-plusplus": "off",

@@ -44,10 +44,10 @@ export default {
      * 3. Remove the outline on focused links when they are also
      *    active or hovered in all browsers (opinionated).
      */
-    a: {
-      background: "transparent" /* 1 */,
-      textDecorationSkip: "objects" /* 2 */
-    },
+    // a: {
+    //   background: "transparent" /* 1 */,
+    //   textDecorationSkip: "objects" /* 2 */
+    // },
     "a:active, a:hover": {
       outlineWidth: 0 /* 3 */
     },
@@ -334,6 +334,8 @@ export default {
       margin: 0
     },
     a: {
+      background: "transparent",
+      textDecorationSkip: "objects",
       fontWeight: "bold",
       textShadow: `2px 2px ${theme.main.colors.background},
         -2px 2px ${theme.main.colors.background},
