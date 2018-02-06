@@ -8,7 +8,7 @@ This is a starter/theme for [Gatsby](https://github.com/gatsbyjs/gatsby).
 
 ## Description
 
-SimpleLanding lets you create simple, optimized and ready to use landing page with no effort.
+SimpleLanding lets you create optimized and ready to use landing page with no effort.
 
 The starter uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
 for React [React-JSS](https://github.com/cssinjs/react-jss) to declare and mantain CSS styles.
