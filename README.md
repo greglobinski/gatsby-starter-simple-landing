@@ -27,7 +27,7 @@ gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] git@github.com:greglobinski/gatsby
 
 ## Customization
 
-### Website metadata
+### Metadata
 
 Edit `\src\utils\siteConfig.js`
 
@@ -159,7 +159,7 @@ export default {
 
 * [www.lazywill.com](https://www.lazywill.com/)
 
-pr to add your blog
+pr to add your page
 
 # Updates
 
