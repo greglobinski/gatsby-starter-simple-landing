@@ -8,9 +8,9 @@ This is a starter/theme for [Gatsby](https://github.com/gatsbyjs/gatsby).
 
 ## Description
 
-#### Styles
+SimpleLanding lets you create simple, optimized and ready to use landing page with no effort.
 
-SimpleLanding uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
+The starter uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
 for React [React-JSS](https://github.com/cssinjs/react-jss) to declare and mantain CSS styles.
 
 ## Setup
@@ -126,7 +126,34 @@ const theme = createMuiTheme({
 
 ### Content
 
-Page content is located in `/content/` and `/images` directories.
+#### Text
+
+Edit the `md` files in the `/scr/content/` directory to change the texts on the page.
+
+#### Images
+
+Exchange `/src/images/phone.png`, '/src/images/pnone-perspective.png`and`/src/images/background.jpg`into your own. The responsive variants of the images will generated automaticaly during`gatsby develop`.
+
+#### Icons
+
+Exchange `/src/images/icon.png` and `/src/images/apple-icon.png` into your own. Then run `yarn generate-manifest-icons` command to regenerate icons for android (`manifest.json`) and apple devices.
+
+#### Logo
+
+Edit the `\src\images\logos.js`
+
+```
+export default {
+  MAIN: {
+    viewBox: "...",
+    path: (
+      <g fillRule="evenodd" clipRule="evenodd" fill="#FFF">
+        <path .... />
+      </g>
+    )
+  }
+};
+```
 
 # Sites built with the starter
 
