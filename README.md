@@ -2,7 +2,7 @@
 
 [DEMO website](https://gssl.greglobinski.com/)
 
-![](static/screens/demo.jpg)
+![](static/screens/screens.jpg)
 
 This is a starter/theme for [Gatsby](https://github.com/gatsbyjs/gatsby).
 
@@ -27,7 +27,7 @@ gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] git@github.com:greglobinski/gatsby
 
 ## Customization
 
-### Website data
+### Website metadata
 
 Edit `\src\utils\siteConfig.js`
 
@@ -68,7 +68,7 @@ module.exports = {
 };
 ```
 
-### Theme
+### Style Theme
 
 Edit the `\src\styles\theme.js` file to customize style of elements
 
@@ -126,7 +126,7 @@ const theme = createMuiTheme({
 
 ### Content
 
-Page content is located in `/content/` directory, in markdown files.
+Page content is located in `/content/` and `/images` directories.
 
 # Sites built with the starter
 
