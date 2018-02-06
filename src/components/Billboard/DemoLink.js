@@ -6,6 +6,8 @@ import Color from "color";
 import ArrowForward from "material-ui-icons/ArrowForward";
 import Button from "material-ui/Button";
 
+import config from "../../utils/config";
+
 const styles = theme => ({
   root: {
     display: "block",
@@ -40,7 +42,7 @@ const DemoLink = props => {
   const { classes, onClick } = props;
   return (
     <Button onClick={onClick} classes={{ root: classes.root, label: classes.label }}>
-      Go to GitHub <ArrowForward />
+      {config.ctaLinkLabel} <ArrowForward />
     </Button>
   );
 };
