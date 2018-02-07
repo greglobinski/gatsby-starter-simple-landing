@@ -128,7 +128,7 @@ const theme = createMuiTheme({
 
 #### Text
 
-Edit the `md` files in the `/scr/content/` directory to change the texts on the page.
+Edit the `md` files in the `/scr/content/` directory to change text on the page.
 
 #### Images
 
