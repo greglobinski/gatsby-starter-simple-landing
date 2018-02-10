@@ -52,7 +52,7 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
       config.plugin("BundleAnalyzerPlugin", BundleAnalyzerPlugin, [
         {
           analyzerMode: "static",
-          reportFilename: "./report.html",
+          reportFilename: "./report/treemap.html",
           openAnalyzer: true,
           logLevel: "error",
           defaultSizes: "gzip"
