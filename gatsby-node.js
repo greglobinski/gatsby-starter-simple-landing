@@ -5,13 +5,6 @@ const _ = require("lodash");
 exports.modifyWebpackConfig = ({ config, stage }) => {
   switch (stage) {
     case "build-javascript":
-      config.plugin("webpack-bundle-analyzer", BundleAnalyzerPlugin, [
-        {
-          analyzerMode: "static",
-          reportFilename: "./static/report.html",
-          generateStatsFile: true
-        }
-      ]);
       config.plugin("CommonsChunkPlugin", webpack.optimize.CommonsChunkPlugin, [
         {
           name: `commons`,
@@ -54,6 +47,14 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
             );
             return isFramework || count > 2;
           }
+        }
+      ]);
+      config.plugin("BundleAnalyzerPlugin", BundleAnalyzerPlugin, [
+        {
+          analyzerMode: "static",
+          reportFilename: "./report.html",
+          openAnalyzer: true,
+          logLevel: "error"
         }
       ]);
 
