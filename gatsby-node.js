@@ -54,7 +54,8 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
           analyzerMode: "static",
           reportFilename: "./report.html",
           openAnalyzer: true,
-          logLevel: "error"
+          logLevel: "error",
+          defaultSizes: "gzip"
         }
       ]);
 
