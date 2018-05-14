@@ -132,7 +132,7 @@ Edit the `md` files in the `/scr/content/` directory to change text on the page.
 
 #### Images
 
-Exchange `/src/images/phone.png`, '/src/images/pnone-perspective.png`and`/src/images/background.jpg`into your own. The responsive variants of the images will generated automaticaly during`gatsby develop`.
+Exchange `/src/images/phone.png`, '/src/images/pnone-perspective.png` and `/src/images/background.jpg`into your own. The responsive variants of the images will generated automaticaly during`gatsby develop`.
 
 #### Icons
 
