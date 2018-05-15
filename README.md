@@ -30,7 +30,7 @@ https://github.com/greglobinski/gatsby-starter-simple-landing.git
 
 Edit `\src\utils\siteConfig.js`
 
-```
+```javascript
 module.exports = {
   pathPrefix: "/",
   appName: "SimpleLanding",
@@ -57,7 +57,7 @@ module.exports = {
 
 Edit the `\src\styles\colors.js` file to customize the color palette.
 
-```
+```javascript
 module.exports = {
   bg: "#D9D9D9",
   accent: "#709425",
@@ -71,7 +71,7 @@ module.exports = {
 
 Edit the `\src\styles\theme.js` file to customize style of elements
 
-```
+```javascript
 const theme = createMuiTheme({
   main: {
     colors: {
@@ -141,13 +141,13 @@ Exchange `/src/images/icon.png` and `/src/images/apple-icon.png` into your own. 
 
 Edit the `\src\images\logos.js`
 
-```
+```javascript
 export default {
   MAIN: {
     viewBox: "...",
     path: (
       <g fillRule="evenodd" clipRule="evenodd" fill="#FFF">
-        <path .... />
+        <path />
       </g>
     )
   }
