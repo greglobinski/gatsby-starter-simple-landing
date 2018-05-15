@@ -2,7 +2,9 @@
 
 ![](static/screens/screens.jpg)
 
-[DEMO](https://gatsby-starter-simple-landing.greglobinski.com/)
+* See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/)
+
+* For more information visit » [dev.greglobinski.com](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
 
 ___
 
@@ -11,17 +13,25 @@ A simple, ready to use, easy to customize landing page starter for [GatsbyJS](ht
 The starter uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
 for React [React-JSS](https://github.com/cssinjs/react-jss) to declare and mantain CSS styles.
 
-## Setup
+## Prerequisites
 
-If you are completely new to GatsbyJS, start with one of its
-[official starters](https://www.gatsbyjs.org/docs/gatsby-starters/). If you
-have already went through with the
-[tutorials](https://www.gatsbyjs.org/tutorial/), install the starter using
-`gatsby new` command.
+If you do not have Gatsby Cli installed yet, do it first.
 
 ```text
-gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG]
-https://github.com/greglobinski/gatsby-starter-simple-landing.git
+npm install --global gatsby-cli
+```
+More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one/).
+
+## Installing
+
+Install the starter using `gatsby new` command.
+
+```text
+gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-simple-landing.git
+```
+then go to the newly created directory and run
+```text
+gatsby develop
 ```
 
 ## Customization
@@ -123,7 +133,7 @@ const theme = createMuiTheme({
 });
 ```
 
-## Content edition
+## Content editing
 
 ### Text
 
@@ -153,6 +163,20 @@ export default {
   }
 };
 ```
+
+## Authors
+
+* Greg Lobinski [@greglobinski](https://github.com/greglobinski)
+
+See also the list of [contributors](https://github.com/greglobinski/gatsby-starter-simple-landing/graphs/contributors) who participated in this project.
+
+## Contributing
+
+* Fork the repo
+* Create your feature branch (git checkout -b feature/fooBar)
+* Commit your changes (git commit -am 'Add some fooBar')
+* Push to the branch (git push origin feature/fooBar)
+* Create a new Pull Request
 
 ## Sites built with the starter
 
