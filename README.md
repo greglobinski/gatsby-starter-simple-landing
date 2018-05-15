@@ -38,7 +38,7 @@ Install the starter using `gatsby new` command.
 ```text
 gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-simple-landing.git
 ```
-then go to the newly created directory and run
+then go to the newly created directory and run in development
 ```text
 gatsby develop
 ```
