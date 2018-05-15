@@ -3,7 +3,11 @@
 [![GitHub license](https://img.shields.io/github/license/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/greglobinski/gatsby-starter-simple-landing.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Fgatsby-starter-simple-landing)
 
-# SimpleLanding starter for GatsbyJS
+# SimpleLanding 
+
+  <br />
+
+A GatsbyJS landing page starter.
 
   <br />
 
