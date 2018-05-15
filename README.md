@@ -5,13 +5,17 @@
 
 # SimpleLanding starter for GatsbyJS
 
-![](static/screens/screens.jpg)
+  <br />
 
-* See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/)
+![](static/screens/screens.jpg) <br />
 
-* For more information visit » [dev.greglobinski.com](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
+  <br />
 
-<br /><br /><br />
+See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/)
+
+For more information visit » [dev.greglobinski.com](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
+
+## Description
 
 A simple, ready to use, easy to customize landing page starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby) with auto generated, highly optimized in sizes & types Hero images.
 
