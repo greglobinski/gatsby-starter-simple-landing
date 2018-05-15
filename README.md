@@ -4,7 +4,7 @@
 
 [DEMO](https://gatsby-starter-simple-landing.greglobinski.com/)
 
----
+___
 
 A simple, ready to use, easy to customize landing page starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby) with auto generated, highly optimized in sizes & types Hero images.
 
