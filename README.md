@@ -8,6 +8,13 @@
 
 ___
 
+[![GitHub issues](https://img.shields.io/github/issues/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/issues)
+[![GitHub stars](https://img.shields.io/github/stars/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/stargazers)
+[![GitHub license](https://img.shields.io/github/license/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/greglobinski/gatsby-starter-simple-landing.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Fgatsby-starter-simple-landing)
+
+
+
 A simple, ready to use, easy to customize landing page starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby) with auto generated, highly optimized in sizes & types Hero images.
 
 The starter uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
