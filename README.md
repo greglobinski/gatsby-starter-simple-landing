@@ -208,7 +208,7 @@ PR to add your page
 
 MIT License
 
-Copyright (c) 2017 gatsbyjs
+Copyright (c) 2017 gatsbyjs <br />
 Copyright (c) 2018 greg lobinski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
