@@ -1,8 +1,8 @@
-# SimpleLanding starter for Gatsby
+# SimpleLanding starter for GatsbyJS
 
 ![](static/screens/screens.jpg)
 
-[DEMO website](https://gssl.greglobinski.com/)
+[DEMO](https://gatsby-starter-simple-landing.greglobinski.com/)
 
 ---
 
