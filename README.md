@@ -17,7 +17,7 @@ A GatsbyJS landing page starter.
 
 See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/)
 
-For more information visit » [dev.greglobinski.com](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
+For more information visit » [dev.greglobinski.com/gatsby-starter-simple-landing](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
 
 ## Description
 
