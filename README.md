@@ -1,13 +1,10 @@
+# SimpleLanding
+
+A GatsbyJS landing page starter. <br /><br />
 [![GitHub issues](https://img.shields.io/github/issues/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/issues)
 [![GitHub stars](https://img.shields.io/github/stars/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/stargazers)
 [![GitHub license](https://img.shields.io/github/license/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/greglobinski/gatsby-starter-simple-landing.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Fgatsby-starter-simple-landing)
-
-# SimpleLanding 
-
-  <br />
-
-A GatsbyJS landing page starter.
 
   <br />
 
@@ -15,8 +12,7 @@ A GatsbyJS landing page starter.
 
   <br />
 
-See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/)
-
+See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/) <br />
 For more information visit » [dev.greglobinski.com/gatsby-starter-simple-landing](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
 
 ## Description
@@ -33,19 +29,30 @@ If you do not have Gatsby Cli installed yet, do it first.
 ```text
 npm install --global gatsby-cli
 ```
+
 More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one/).
 
-## Installing
+## Getting started
 
-Install the starter using `gatsby new` command.
+Install the starter using Gatsby Cli `gatsby new` command.
 
 ```text
 gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-simple-landing.git
 ```
-then go to the newly created directory and run in development
+
+Go into the newly created directory and run
+
 ```text
 gatsby develop
 ```
+
+to hot-serve your website on http://localhost:8000 or
+
+```text
+gatsby build
+```
+
+to create static site ready to host (/public).
 
 ## Customization
 
