@@ -1,28 +1,27 @@
 # SimpleLanding starter for Gatsby
 
-[DEMO website](https://gssl.greglobinski.com/)
-
 ![](static/screens/screens.jpg)
 
-This is a starter/theme for [Gatsby](https://github.com/gatsbyjs/gatsby).
+[DEMO website](https://gssl.greglobinski.com/)
 
-## Description
+---
 
-SimpleLanding lets you create optimized and ready to use landing page with no effort.
+A simple, ready to use, easy to customize landing page starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby) with auto generated, highly optimized in sizes & types Hero images.
 
 The starter uses the css-in-js library [JSS](https://github.com/cssinjs/jss) and its integration
 for React [React-JSS](https://github.com/cssinjs/react-jss) to declare and mantain CSS styles.
 
 ## Setup
 
-If you are completely new to Gatsby, start with one of its
+If you are completely new to GatsbyJS, start with one of its
 [official starters](https://www.gatsbyjs.org/docs/gatsby-starters/). If you
 have already went through with the
-[tutorials](https://www.gatsbyjs.org/tutorial/) install the starter using
+[tutorials](https://www.gatsbyjs.org/tutorial/), install the starter using
 `gatsby new` command.
 
-```
-gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-simple-landing.git
+```text
+gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG]
+https://github.com/greglobinski/gatsby-starter-simple-landing.git
 ```
 
 ## Customization
@@ -31,7 +30,7 @@ gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/ga
 
 Edit `\src\utils\siteConfig.js`
 
-```
+```javascript
 module.exports = {
   pathPrefix: "/",
   appName: "SimpleLanding",
@@ -58,7 +57,7 @@ module.exports = {
 
 Edit the `\src\styles\colors.js` file to customize the color palette.
 
-```
+```javascript
 module.exports = {
   bg: "#D9D9D9",
   accent: "#709425",
@@ -72,7 +71,7 @@ module.exports = {
 
 Edit the `\src\styles\theme.js` file to customize style of elements
 
-```
+```javascript
 const theme = createMuiTheme({
   main: {
     colors: {
@@ -124,25 +123,25 @@ const theme = createMuiTheme({
 });
 ```
 
-### Content
+## Content edition
 
-#### Text
+### Text
 
 Edit the `md` files in the `/scr/content/` directory to change text on the page.
 
-#### Images
+### Images
 
-Exchange `/src/images/phone.png`, '/src/images/pnone-perspective.png` and `/src/images/background.jpg`into your own. The responsive variants of the images will generated automaticaly during`gatsby develop`.
+Exchange `/src/images/phone.png`, '/src/images/pnone-perspective.png`and`/src/images/background.jpg`into your own. The responsive variants of the images will generated automaticaly during`gatsby develop`.
 
-#### Icons
+### Icons
 
 Exchange `/src/images/icon.png` and `/src/images/apple-icon.png` into your own. Then run `yarn generate-manifest-icons` command to regenerate icons for android (`manifest.json`) and apple devices.
 
-#### Logo
+### Logo
 
 Edit the `\src\images\logos.js`
 
-```
+```javascript
 export default {
   MAIN: {
     viewBox: "...",
@@ -155,13 +154,32 @@ export default {
 };
 ```
 
-# Sites built with the starter
+## Sites built with the starter
 
 * [www.lazywill.com](https://www.lazywill.com/)
 
-pr to add your page
+PR to add your page
 
-# Updates
+## Licence
 
-If you are interested in updates follow me at
-[@greglobinski](https://twitter.com/greglobinski).
+MIT License
+
+Copyright (c) 2017 greg lobinski
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
