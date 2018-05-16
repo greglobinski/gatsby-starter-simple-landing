@@ -1,6 +1,7 @@
 # SimpleLanding
 
 A GatsbyJS landing page starter. <br /><br />
+
 [![GitHub issues](https://img.shields.io/github/issues/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/issues)
 [![GitHub stars](https://img.shields.io/github/stars/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/stargazers)
 [![GitHub license](https://img.shields.io/github/license/greglobinski/gatsby-starter-simple-landing.svg)](https://github.com/greglobinski/gatsby-starter-simple-landing/blob/master/LICENSE)
