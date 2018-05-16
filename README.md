@@ -9,7 +9,7 @@ A GatsbyJS landing page starter. <br /><br />
 
   <br />
 
-![](static/screens/screens.jpg) <br />
+![](static/screens/gatsby-starter-simple-landing.gif) <br />
 
   <br />
 
