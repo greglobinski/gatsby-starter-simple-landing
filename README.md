@@ -13,9 +13,6 @@ A GatsbyJS landing page starter. <br /><br />
 
   <br />
 
-See the starter in action » [demo website](https://gatsby-starter-simple-landing.greglobinski.com/) <br />
-For more information visit » [dev.greglobinski.com/gatsby-starter-simple-landing](https://dev.greglobinski.com/gatsby-starter-simple-landing/)
-
 ## Description
 
 A simple, ready to use, easy to customize landing page starter for [GatsbyJS](https://github.com/gatsbyjs/gatsby) with auto generated, highly optimized in sizes & types Hero images.
